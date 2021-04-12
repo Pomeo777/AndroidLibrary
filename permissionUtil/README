@@ -1,0 +1,17 @@
+Class which helps check permission and get permission granted result.
+
+Example:
+
+val permissionUtil = PermissionUtil()
+
+//in Activity
+if(permissionUtil.showPermissionDialog(Manifest.permission.CAMERA,  MY_PERMISSIONS_REQUEST_CODE_WORK_WITH_CAMERA, ImageBehaviourActivity.this)) {
+                    cameraImagePath =  imageManagePresenter.getFromCamera(ImageBehaviourActivity.this,  PROFILE_CAMERA_INTENT_REQUEST_CODE );
+                }
+                
+                
+//in Fragment
+if(permissionUtil.showFragmentPermissionDialog(Manifest.permission.READ_EXTERNAL_STORAGE,  MY_PERMISSIONS_REQUEST_CODE_READ_EXTERNAL_STORAGE, getActivity(), ImageBehaviourFragment.this)) {
+                    imageManagePresenter.getFromGallery(ImageBehaviourFragment.this, PROFILE_GALLERY_INTENT_REQUEST_CODE);
+                }
+                
