@@ -1,0 +1,233 @@
+HASH KEY of IDE:  R5HPugMTUl5GLmLEyn2jh4VOuSk=
+alias: realdating-key-1
+
+****************Inner static and non-static classes: https://stackoverflow.com/a/10968689
+
+
+1. Example PageViewer, CoverFlow(carousel cardview): 
+http://www.tutorialsface.com/2015/09/android-viewpager-simple-tutorial-sliding-screens/
+https://www.programcreek.com/java-api-examples/?class=me.crosswall.lib.coverflow.core.PagerContainer&method=getViewPager
+https://inducesmile.com/android/understanding-android-viewpager-and-custom-pageradapter/
+http://www.devexchanges.info/2015/11/making-carousel-layout-in-android.html
+https://android-arsenal.com/details/1/3530
+http://www.vogella.com/tutorials/AndroidTouch/article.html
+--pageIndicator: https://github.com/romandanylyk/PageIndicatorView
+
+Detecting gestures on Android via GestureDetector :  https://en.proft.me/2017/06/25/detecting-gestures-android-gesturedetector/
+
+
+2. LazyLoader example: 
+http://androidcocktail.blogspot.in/2016/05/lazily-loaded-listview-in-android.html
+https://www.developerfusion.com/article/145373/android-listviews-with-dynamic-data/
+https://stackoverflow.com/questions/541966/lazy-load-of-images-in-listview
+
+3. How to create chat app: 
+https://www.youtube.com/watch?v=QUFJBFIt5po
+https://www.youtube.com/watch?v=9dC4w04AuOs&list=PLxabZQCAe5fio9dm1Vd0peIY6HLfo5MCf&index=16
+https://www.youtube.com/watch?v=sdEVrumWySM
+--chat activity using Recycler view: https://www.dev2qa.com/android-chat-app-example-using-recyclerview/
+http://shubhank101.github.io/iOSAndroidChaosOverFlow/2016/10/Chat-Application-Using-XMPP-Smack-API-Android-Tutorial
+http://www.blikoontech.com/tutorials/android-smack-xmpp-introductionbuilding-a-simple-client
+https://github.com/igniterealtime/Smack/blob/master/documentation/messaging.md
+
+4.Observer: 
+https://refactoring.guru/ru/design-patterns/observer/java/example
+http://greenrobot.org/eventbus/documentation/how-to-get-started/
+
+5.How to check if user is logged in with FB SDK 4.0 for Android?:  
+https://stackoverflow.com/questions/29294015/how-to-check-if-user-is-logged-in-with-fb-sdk-4-0-for-android
+https://stackoverflow.com/questions/31327897/custom-facebook-login-button-android
+https://www.youtube.com/watch?v=myWu-q8Q2NA
+https://www.youtube.com/watch?v=To6386Yu6rU
+https://www.youtube.com/watch?v=KjBNFWKNMOY
+http://dajver.blogspot.com/2015/01/facebook-fb-sdk-30-android.html
+
+5.1 Fecebok SDK phone authorisation:
+https://www.youtube.com/watch?v=4mRMTcmb_V8
+https://code.tutsplus.com/ru/tutorials/quick-tip-passwordless-authentication-with-account-kit--cms-28033
+
+6.Добавляем индикатор в Toolbar и в TabLayout : http://dajver.blogspot.com/2017/11/toolbar-tablayout.html
+
+7. Retrofit: http://javaway.info/ispolzovanie-retrofit-2-v-prilozheniyah-android/
+
+8. ImageDownloader:  https://github.com/vad-zuev/ImageDownloader/blob/master/app/src/main/java/com/so/example/tools/BasicImageDownloader.java
+
+9. Bitmap -String -Bitmap: 
+ //конвертируем Bitmap на Base64 
+public String convertToBase64(Bitmap bitmap) {
+        ByteArrayOutputStream os = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG,100,os);
+        byte[] byteArray = os.toByteArray();
+        return Base64.encodeToString(byteArray, 0);
+    }
+
+//и наоборот
+public Bitmap convertToBitmap(String base64String) {
+        byte[] decodedString = Base64.decode(base64String, Base64.DEFAULT);
+        Bitmap bitmapResult = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
+        return bitmapResult;
+    }'
+
+9.1  Bitmap size and quality: https://stackoverflow.com/questions/477572/strange-out-of-memory-issue-while-loading-an-image-to-a-bitmap-object/823966#823966
+
+10. Registration app in PlayStore:  http://developer.alexanderklimov.ru/android/publish.php
+			   https://habr.com/company/scorocode/blog/307002/
+
+11. POJO and JSON: http://www.jsonschema2pojo.org/
+
+12. Glide: 
+************https://www.youtube.com/watch?v=E0YgCRnK_6c&list=PLpUMhvC6l7AO4H58YPQInQS-OHSQtFvlO&index=1
+************https://code.tutsplus.com/ru/tutorials/code-an-image-gallery-android-app-with-glide--cms-28207
+
+13. Saving Image Data In SharedPreferences: http://android-steps.blogspot.com/2015/08/profile-page-save-image-data-in.html
+
+14. Icons: https://material.io/tools/icons/?style=baseline
+     Button, style, dimens and others: https://habr.com/post/206012/
+Theme, style: http://eagle.phys.utk.edu/guidry/android/themesDemo.html
+
+15. Librari for getting location: https://android-arsenal.com/details/1/1321
+      *********** Get coordinates: https://stackoverflow.com/questions/15711499/get-latitude-and-longitude-with-geocoder-and-android-google-maps-api-v2
+      *********** Get coordinates: https://stackoverflow.com/questions/9698328/how-to-get-coordinates-of-an-address-in-android
+			https://developers.google.com/maps/documentation/geolocation/intro
+
+16. Countries List:  https://androidkennel.org/android-listview-tutorial/
+
+17.Phone number formatting and validation: https://github.com/googlei18n/libphonenumber
+
+18. RxJava :  https://habr.com/post/336268/
+
+19. Range seekbar: https://github.com/nickwinder/range-bar-preference
+	            https://android-arsenal.com/details/1/3996	
+	            https://mobikul.com/how-to-make-range-seekbar-or-dual-thumbs-seekbar-in-android/
+
+20. Good book: http://book2s.com/java/api/android/content/sharedpreferences/getall-0.html 
+
+21. Adding Settings to an App:  https://google-developer-training.gitbooks.io/android-developer-fundamentals-course-practicals/content/en/Unit%204/92_p_adding_settings_to_an_app.html
+
+22.Buttons: https://android-tools.ru/coding/delaem-krasivye-knopki-v-android/
+23.RadioButtons and RadioGroup: http://developer.alexanderklimov.ru/android/views/radiobutton.php
+			  https://github.com/Gavras/MultiLineRadioGroup
+	сделать радиокнопки как обычные кнопки: https://stackoverflow.com/questions/40403391/radiobutton-styled-as-a-normal-button
+
+24. Spinner Adapters - good code for work with it(save or load value used it position): https://stackoverflow.com/questions/2390102/how-to-set-selected-item-of-spinner-by-value-not-by-position
+
+25. Spinner: https://www.mkyong.com/android/android-spinner-drop-down-list-example/
+	   http://developer.alexanderklimov.ru/android/views/spinner.php
+	   http://www.androiddeft.com/2018/01/15/multiple-spinner-dropdown-android/
+
+26. RecyclerView:http://javaway.info/kak-ispolzovat-spisok-v-android/
+
+27. RecyclerView swipe deleting and swipe buttons: https://stackoverflow.com/questions/44965278/recyclerview-itemtouchhelper-buttons-on-swipe/45062745?noredirect=1#comment77123056_45062745
+		https://android.jlelse.eu/android-recyclerview-swipeable-items-46a3c763498d
+		https://www.youtube.com/watch?v=NYOb72R6Joo
+
+
+28. Andrpoid In-app purchase: https://www.youtube.com/watch?v=nn2IbTSYNzA
+			https://habr.com/post/313416/
+			https://www.youtube.com/watch?v=vOn44fLdGDU
+			https://habr.com/post/304650/
+			https://habr.com/ru/post/444072/
+
+29. How to create explicit BroadcastReceiver  for Android Oreo and later: https://www.youtube.com/watch?v=Eyuez4D-qLg
+
+30. Handling Orientation Changes on Android: http://code.hootsuite.com/orientation-changes-on-android/
+
+31. Phone verifcation Sinch: https://www.sinch.com/tutorials/android-flash-call-verification/#flash%20call%20verification
+
+32. SwipeLayout(боковые кнопки при свайпе элемента): https://github.com/daimajia/AndroidSwipeLayout/issues/276 
+
+33. Push Notification in Android using Firebase (FCM) and PHP: http://www.androiddeft.com/2017/11/18/push-notification-android-firebase-php/
+						https://firebase.google.com/docs/cloud-messaging/android/client
+ 
+34. Doze and StanBy: http://developer.alexanderklimov.ru/android/theory/doze.php
+
+35.  mercurial merge named branch: https://monoray.ru/77-development/17-mercurial-merging-named-branches
+
+36. Photo editor: https://www.befunky.com/create/photo-editor/
+
+37. Convert hg repository to git repository: https://markheath.net/post/how-to-convert-mercurial-repository-to
+
+38. RecyclerView Using GridLayoutManager: https://abhiandroid.com/materialdesign/recyclerview-gridview.html
+					  https://noties.io/blog/2018/01/23/grid-items-equal-spacing-recyclerview/index.html
+
+39. How to check internet access on Android? InetAddress never times out: https://stackoverflow.com/questions/1560788/how-to-check-internet-access-on-android-inetaddress-never-times-out
+
+40. Android: How can get the current foreground activity (from a service): https://stackoverflow.com/questions/3873659/android-how-can-i-get-the-current-foreground-activity-from-a-service
+
+41. Getting file from different content providers: https://stackoverflow.com/questions/52750508/accessing-public-download-files-onactivityresult-android-28-samsung-galaxy-s9
+						   https://gist.github.com/HBiSoft/15899990b8cd0723c3a894c1636550a8
+					           https://stackoverflow.com/questions/36109507/how-to-get-the-file-path-from-a-uri-that-points-to-a-pdf-document
+
+
+42. Facebook realise hash key
+C:\Program Files\Java\jdk1.8.0_191\bin>Ja
+-exportcert -alias djinn -keystore "X:\Work\ks\my_key_store.jks" | "C:\Program Files\OpenSSL-Win64\bin\openssl.exe" sha1 -binary | "C:\Program Files\OpenSSL-Win64\bin\openssl.exe" base64
+https://stackoverflow.com/questions/23674131/android-facebook-integration-invalid-key-hash
+
+
+43. HightLight TextView: https://stackoverflow.com/a/16190693/10021541
+
+44. MultiWord text search: https://stackoverflow.com/a/14286243/10021541(need add trim() to some string arguments)
+
+45. Room database migration: https://medium.com/androiddevelopers/understanding-migrations-with-room-f01e04b07929
+
+46. How to sort a list by different parameters:  https://stackoverflow.com/questions/1421322/how-do-i-sort-a-list-by-different-parameters-at-different-timed
+
+47.How to get SHA: in terminal: C:\Program Files\Java\jdk1.8.0_191\bin>keytool -list -v -keystore "X:\Work\ks\my_key_store.jks"  -alias djinn_consumer
+
+48. Embeded tcp server: https://github.com/sht5/Android-tcp-server-and-client/blob/eac91255766e2fb49d7853e0948bf50247b59c85/client/AndroidTCPServer/src/com/example/android_tcp_server/TCPCommunicator.java#L84
+
+49. Add ssl to soket server: https://stackoverflow.com/questions/58052483/ssl-tls-connection-from-android-to-a-custom-socket-server#
+
+50. MVVM with Dagger2: https://habr.com/ru/post/337320/
+		       https://medium.com/@vit.onix/dagger2-viewmodel-81d4cd59f642
+		       https://medium.com/@princessdharmy/dagger-2-with-mvvm-simplified-3215b3cf4c96
+		       https://www.ericdecanini.com/2020/01/13/android-mvvm-dagger-2-and-android-architecture-components/
+		       https://itnan.ru/post.php?c=1&p=335940	
+
+51.Databinding: https://androidwave.com/android-data-binding-recyclerview/
+		https://stfalcon.com/ru/blog/post/faster-android-apps-with-databinding
+
+52. Checking if an Android application is running in the background:  https://stackoverflow.com/questions/3667022/checking-if-an-android-application-is-running-in-the-background
+
+53. Fastlane: https://www.raywenderlich.com/6461407-fastlane-tutorial-for-android-getting-started#toc-anchor-015
+	      https://android-tools.ru/coding/avtomatizaciya-publikacii-prilozhenij-s-pomoshhyu-fastlane/
+54. Fastlane: Multi package set up: https://github.com/fastlane/fastlane/issues/7949
+
+55. Transparent activity: https://tech.pic-collage.com/something-about-android-windowistranslucent-641cc02ff66f
+
+56. Set margin programmatically: https://stackoverflow.com/a/36114965/10021541
+
+57. PopupMenu with icons: https://stackoverflow.com/a/46265894/10021541
+
+58. Handling keyboard open/close: https://stackoverflow.com/a/38505771/10021541
+
+59: FTS4 and Room: https://stackoverflow.com/questions/58351266/how-can-i-reference-a-searchable-fts4-table-in-my-dao-without-getting-a-compiler
+		   https://medium.com/@sienatime/enabling-sqlite-fts-in-room-2-1-75e17d0f0ff8 
+	
+60. Отличия дизайна мобильного приложения под iOS и Android: https://vc.ru/design/93884-32-otlichiya-dizayna-mobilnogo-prilozheniya-pod-ios-i-android
+
+61. How to scroll view to Top of screen: https://stackoverflow.com/questions/53285627/how-to-scroll-view-to-top-of-screen/53285905
+
+62. RecyclerView show all items in the list: https://stackoverflow.com/a/61190804
+
+63. EditText, clear focus on touch outside: https://stackoverflow.com/a/28939113
+
+64. Chips: https://betacode.net/12613/chipgroup-and-chip-entry-example
+
+65. Resume Activity from notification: https://stackoverflow.com/questions/51176692/how-to-programmatically-resume-an-activity-from-a-notification
+
+66. ViewBinding: https://medium.com/codex/android-viewbinding-migration-16070e24b752
+
+67.MVVM на Android с компонентами архитектуры + библиотека Koin: https://medium.com/nuances-of-programming/mvvm-%D0%BD%D0%B0-android-%D1%81-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%B0%D0%BC%D0%B8-%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D1%8B-%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0-koin-e2e77b77950e
+
+68. Room Database in android with Kotlin-Coroutines: https://medium.com/@hrithik481/roomdb-in-android-with-kotlin-coroutines-bdb11ae37acb
+
+69.Jenkins для Android сборки, с помощью Docker: https://habr.com/ru/post/443606/
+
+70. Kotlin. Kotlin coroutine: https://metanit.com/kotlin/tutorial/8.5.php
+					https://nuancesprog.ru/p/7397/(2 parts(with exceptions))
+
+71. Kotlin. Kotlin coroutines lifecycle management: https://habr.com/ru/company/otus/blog/564050/
+
+72. Android TV: https://corochann.com/construction-of-browsefragment-android-tv-application-hands-on-tutorial-2-71/
